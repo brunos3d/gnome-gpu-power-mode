@@ -1,0 +1,16 @@
+[Unit]
+Description=GPU power-mode daemon (NVML power limit, system D-Bus)
+Documentation=https://github.com/brunos3d/gnome-gpu-power-mode
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/local/lib/gpu-power-mode/gpupowerd.py
+Restart=on-failure
+RestartSec=3
+# The daemon persists the chosen watts to /var/lib/gpu-power-mode and
+# re-applies it on start, so the power mode survives reboots. It does not
+# reset the limit on stop: a power cap is a deliberate setting to keep.
+
+[Install]
+WantedBy=multi-user.target

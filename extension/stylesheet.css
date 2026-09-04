@@ -1,0 +1,10 @@
+.gpupower-slider-label {
+    min-width: 3.6em;
+    text-align: right;
+    font-feature-settings: "tnum";
+}
+
+.gpupower-status {
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.7);
+}

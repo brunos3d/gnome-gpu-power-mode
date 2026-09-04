@@ -1,0 +1,7 @@
+{
+  "uuid": "gpu-power-mode@bruno",
+  "name": "GPU Power Mode",
+  "description": "Pick an NVIDIA GPU power mode from Quick Settings: Power Saver, Balanced or Performance, plus a watts slider. Talks to a root NVML daemon, so it works on Wayland. The range is discovered from the card and never exceeds its rated power.",
+  "shell-version": ["45", "46", "47", "48", "49", "50"],
+  "url": "https://github.com/brunos3d/gnome-gpu-power-mode"
+}
