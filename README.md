@@ -9,6 +9,8 @@ rated power.
 Tested on: Manjaro, GNOME Shell 50.4, Wayland, NVIDIA driver 610.57.04,
 RTX 3060 Ti (100W min, 225W rated).
 
+![GPU Power in the GNOME Quick Settings menu](docs/screenshot.png)
+
 ## What it does
 
 The daemon controls the GPU power management limit through NVML:
